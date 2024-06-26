@@ -1,8 +1,8 @@
-const convertButton = document.querySelector(".convert-button") 
+const convertButton = document.querySelector(".convert-button")
 
 function convertValues(){
-console.log(" funcionou porra")
+   const inputCurrencyValue = document.querySelector(".input-currency").value
+   console.log("inputCurrencyValue")
+
 }
-
 convertButton.addEventListener("click",convertValues)
-
