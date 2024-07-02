@@ -60,9 +60,9 @@ function convertValues() {
 
       if (currencySelect.value == "libra") {
          currencyName.innerHTML = " Libra"
-         currencyimage. src="./assets/libra 1.png" 
+         currencyimage. src="./assets/libra2.png" 
       }
-
+      convertValues()
 
    }
 
