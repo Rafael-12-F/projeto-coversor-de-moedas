@@ -40,10 +40,35 @@ function convertValues() {
       currency: "BRL"
    }).format(inputCurrencyValue)
 
-function changeCurrency(){ 
-   console.log("trocou")
+
+
+
+   function changeCurrency(){
+
+      const currencyName = document.getElementById("currency-name")
+      const currencyimage = document.querySelector(".currency-img")
+
+if(currencySelect.value == "dollar"){
+   currencyName.innerHTML =" Dolar Americano"
+   currencyimage.src = "./assets/estados-unidos.png"
 }
 
-currencySelect.addEventListener("change",changeCurrency)
+if(currencySelect.value == "euro"){
+   currencyName.innerHTML =" Euro"
+   currencyimage.src = "./assets/moeda-euro.png"
+}
+
+if(currencySelect.value == "libra"){
+   currencyName.innerHTML =" Libra"
+   
+}
+
+      
+   }
+  
+   
+   currencySelect.addEventListener("change", changeCurrency)
+
+
 }
 convertButton.addEventListener("click", convertValues)
